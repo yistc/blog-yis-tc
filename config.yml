@@ -33,7 +33,7 @@ params:
     ShowReadingTime: true
     ShowShareButtons: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
     disableSpecial1stPost: false
@@ -97,9 +97,16 @@ params:
     #         SiteVerificationTag: "XYZabc"
 
     cover:
-        hidden: true # hide everywhere but not in structured data
+        # generate multiple sizes of the image
+        # disable to reduce generation time and size of the site
+        responsiveImages: true 
+
+        # To enable hyperlinks to the full image size on post pages
+        linkFullImages: true
+
+        hidden: false # hide everywhere but not in structured data
         hiddenInList: true # hide on list pages and home
-        hiddenInSingle: true # hide on single page
+        hiddenInSingle: false # hide on single page
 
     # editPost:
     #     URL: "https://github.com/<path_to_repo>/content"
