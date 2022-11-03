@@ -1,3 +1,140 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: http://yis.tc/
+# languageCode: en-us
+title: yistc's Blog
+
+theme: "PaperModX"
+paginate: 8
+
+# Copyright: "**[CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: yistc's Blog
+    description: "Just a Beginner"
+    keywords: [Blog, Programming, Learning]
+    author: yistc
+    # author: ["Me", "You"] # multiple authors
+    images: ["https://user-images.githubusercontent.com/32131698/196746239-17550959-fa75-471f-a4ba-9fd2c3fa1efe.jpg"]
+    DateFormat: "2006-01-02" # OR "January 2, 2006"
+    defaultTheme: light # dark, light, auto
+    disableThemeToggle: false # theme switch toggle
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    TocSide: 'left'
+    showtoc: true
+    tocopen: false
+
+    math: true
+
+    assets:
+        # disableFingerprinting: true
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
+
+    label:
+        text: "Home"
+        icon: /apple-touch-icon.png
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: ExampleSite
+        subtitle: "This is subtitle"
+        imageUrl: "<img location>"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "yistc"
+        Content: Welcome to my blog
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/yistc_"
+        - name: github
+          url: "https://github.com/yistc"
+        - name: stackoverflow
+          url: "https://stackoverflow.com/users/15480398/yistc"
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+    #     bing:
+    #         SiteVerificationTag: "XYZabc"
+    #     yandex:
+    #         SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    # editPost:
+    #     URL: "https://github.com/<path_to_repo>/content"
+    #     Text: "Suggest Changes" # edit text
+    #     appendFilePath: true # to append file path to Edit link
+
+    # # for search
+    # # https://fusejs.io/api/options.html
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 1
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 2
+        - name: Archives
+          url: /archives/
+          weight: 3
+# Read: https://github.com/reorx/hugo-PaperModX/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: false
+        lineNos: true
+        style: monokai
