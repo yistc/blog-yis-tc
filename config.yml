@@ -128,11 +128,11 @@ params:
 menu:
     main:
         - identifier: categories
-          name: categories
+          name: Categories
           url: /categories/
           weight: 1
         - identifier: tags
-          name: tags
+          name: Tags
           url: /tags/
           weight: 2
         - name: Archives
