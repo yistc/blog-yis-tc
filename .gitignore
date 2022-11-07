@@ -1,2 +1,5 @@
 public/
 .hugo*
+.DS_Store
+.AppleDouble
+.LSOverride
