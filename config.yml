@@ -85,8 +85,10 @@ params:
           url: "https://twitter.com/yistc_"
         - name: github
           url: "https://github.com/yistc"
-        - name: stackoverflow
-          url: "https://stackoverflow.com/users/15480398/yistc"
+        # - name: stackoverflow
+        #   url: "https://stackoverflow.com/users/15480398/yistc"
+        - name: Rss
+          url: "index.xml"
 
     # analytics:
     #     google:
