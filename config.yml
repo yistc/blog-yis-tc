@@ -89,6 +89,9 @@ params:
         #   url: "https://stackoverflow.com/users/15480398/yistc"
         - name: Rss
           url: "index.xml"
+    mainSections:
+      - blog
+      - docs
 
     # analytics:
     #     google:
@@ -127,9 +130,9 @@ params:
     #     keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: series
-          name: Series
-          url: /series/
+        - identifier: categories
+          name: Categories
+          url: /categories/
           weight: 1
         - identifier: tags
           name: Tags

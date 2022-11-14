@@ -1,7 +1,7 @@
 ---
 title: "SwiftUI - Add Settings View for APP"
 date: 2022-11-07T21:40:10+08:00
-series: ['']
+categories: ['']
 tags: ['swiftui']
 draft: false
 ---
