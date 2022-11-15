@@ -91,6 +91,7 @@ params:
           url: "index.xml"
     mainSections:
       - posts
+      # - life
 
     # analytics:
     #     google:
